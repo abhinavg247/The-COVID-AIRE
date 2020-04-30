@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>COVID-19 Quiz </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="header-heading">Welcome to the <span class="header-span">COVID-19</span> Quiz</h1>
+		<p class="header-details">Take the quiz to find out if you are aware of the important facts about the novel
+			Corona Virus and how to
+			look after your health. </p>
+	</header>
+	<div class="quiz-container">
+		<div class="question-number">
+			<h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+		</div>
+		<div class="question">
+
+		</div>
+		<div class="options">
+			<div id="0" class="option1" onclick="check(this)"></div>
+			<div id="1" class="option2" onclick="check(this)"></div>
+			<div id="2" class="option3" onclick="check(this)"></div>
+			<div id="3" class="option4" onclick="check(this)"></div>
+		</div>
+		<div class="button">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-tracker">
+
+		</div>
+	</div>
+
+	<div class="quiz-over">
+		<div class="box">
+			<h1>
+				Good try!<br>
+				You got <span class="correct-answers"></span> out of <span class="total-question2"></span> answers
+				correct!<br>
+				That's <span class="percentage"></span>
+			</h1>
+			<button type="button" onclick="tryAgain()">Try Again</button>
+		</div>
+	</div>
+
+	<footer>
+		<h3 class="footer-heading">Quiz made by Abhinav Gupta</h3>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
